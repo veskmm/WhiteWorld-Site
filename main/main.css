@@ -1,0 +1,135 @@
+
+@font-face {
+  font-family: 'Outwrite'; /* Название придумайте сами */
+  src: url('../font/Outwrite.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Чтобы текст показывался сразу */
+}
+
+@font-face {
+  font-family: 'kom-post'; /* Название придумайте сами */
+  src: url('../font/kom-post.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Чтобы текст показывался сразу */
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) skew(0deg); }
+  10% { transform: translate(-1px, -2px) skew(-1deg); }
+  20% { transform: translate(-3px, 0px) skew(3deg); }
+  30% { transform: translate(3px, 2px) skew(0deg); }
+  40% { transform: translate(1px, -1px) skew(1deg); }
+  50% { transform: translate(-1px, 2px) skew(-1deg); }
+  60% { transform: translate(-3px, 1px) skew(0deg); }
+  70% { transform: translate(3px, 1px) skew(-2deg); }
+  80% { transform: translate(-1px, -1px) skew(4deg); }
+  90% { transform: translate(1px, 2px) skew(0deg); }
+  100% { transform: translate(1px, 1px) skew(0deg); }
+}
+
+.main_title p span {
+  display: inline-block;
+  animation: shake 4s ease-in-out infinite;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in-out;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    position: relative; /* Важно! */
+}
+
+.buttons {
+    padding: 25px 100px;
+    text-align: center;
+    flex-shrink: 0; /* Чтобы кнопки не сжимались */
+
+    button {
+        width: 150px;
+        padding: 5px;     /* Вместо фиксированной высоты */
+        font-family: 'kom-post';
+        font-size: 20px;
+        color: white;
+        background-color: #2F2F2F;
+        border-radius: 40px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0 10px;
+        border: 3px solid #2F2F2F;
+        /* Для идеального центрирования */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        
+      
+    }
+
+    button:hover{
+        transform: scale(1.15);
+    }
+
+    #main {
+        border: 3px solid #2F2F2F;
+        color: #2F2F2F;
+        background-color: #ffffff00;
+    }
+}
+
+.main_title {
+    position: absolute; /* Выходит из потока */
+    top: 50%;           /* Сдвигаем на 50% от верха */
+    left: 50%;          /* Сдвигаем на 50% от левого края */
+    transform: translate(-50%, -50%); /* Центрируем */
+    
+    color: #2F2F2F;
+    text-align: center;
+
+}
+
+.main_title h1 {
+    min-width: 1000px;
+    font-family: 'Outwrite';
+    text-align: center;
+    font-size: 140px;
+    margin: 0;
+}
+
+.main_title p {
+    font-family: 'kom-post';
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Скрываем полосу прокрутки, но прокрутка работает */
+body::-webkit-scrollbar {
+  width: 0;          /* Убираем полосу */
+  background: transparent;
+}
