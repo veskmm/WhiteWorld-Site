@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'kom-post'; /* Название придумайте сами */
   src: url('../font/kom-post.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   font-display: swap; /* Чтобы текст показывался сразу */
 }
@@ -65,6 +65,58 @@ body {
     }
 }
 
+img {
+    display: flex;
+    justify-self: center;
+    margin: 150px 0 50px 0;
+}
+
+.downloadText h1 {
+    font-size: 55px;
+    text-align: center;
+    font-family: 'kom-post';
+    color: #2F2F2F;
+}
+
+.downloadText {
+    display: grid;
+    justify-items: center;
+}
+
+.downloadButton {
+    margin: 100px;
+    display: flex;
+    justify-items: center;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 28px;
+        text-align: center;
+        font-family: 'kom-post';
+        color: #2F2F2F;
+    }
+    button {
+        margin:  0 20px 0 20px;
+        padding: 0;
+        font-size: 28px;
+        text-align: center;
+        font-family: 'kom-post';
+        color: white;
+
+        width: 150px;
+
+        border: none;
+        background-color: #2F2F2F;
+        border-radius: 10px 10px 10px 10px;
+
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        transform: scale(1.15);
+    }
+}
 
 body {
   overflow-y: scroll;
