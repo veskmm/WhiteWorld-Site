@@ -79,6 +79,7 @@ img {
 }
 
 .data {
+    justify-self: center;
     display: flex;
     justify-content: center;
 }
@@ -88,18 +89,21 @@ img {
     text-align: center;
     font-family: 'kom-post';
     color: #2F2F2F;
-    margin: 0 40px 0 40px;
+    padding: 0 20px 0 20px;
 }
 
 .downloadText {
     display: grid;
-    justify-items: center;
+    justify-content: center;
+
 }
 
 .downloadButton {
+    justify-self: center;
+    
     margin: 100px;
     display: flex;
-    justify-items: center;
+    justify-content: center;
 
     h1 {
         margin: 0;
