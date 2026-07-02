@@ -1,4 +1,4 @@
-const objectsImgList = ["../img/lead.png", "../img/ingot.png","../img/scrap.png"];
+const objectsImgList = ["../img/lead.gif", "../img/ingot.gif","../img/scrap.gif","../img/wire.gif"];
 const objectsLoreList = [
     [
         "Свинец",
@@ -23,6 +23,14 @@ const objectsLoreList = [
         "Найди в чёрных шипах — иногда везёт.",
         "Тащи в печь.",
         "Без него не будет ни станка, ни обшивки."
+    ],
+    [
+      "Проволока",
+      "Тонкая, острая, режет пальцы.",
+      "Вытянута из пластины Тягуном.",
+      "Связывает, скрепляет, держит.",
+      "Нужна для усиленных плит.",
+      "Без неё крафт встанет."
     ]
 ]
 
